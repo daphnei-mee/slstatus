@@ -61,6 +61,7 @@ install: all
 	mkdir -p "$(DESTDIR)$(MANPREFIX)/man1"
 	cp -f slstatus.1 "$(DESTDIR)$(MANPREFIX)/man1"
 	chmod 644 "$(DESTDIR)$(MANPREFIX)/man1/slstatus.1"
+	rm config.h
 
 uninstall:
 	rm -f "$(DESTDIR)$(PREFIX)/bin/slstatus"
